@@ -1,0 +1,138 @@
+@font-face {
+  font-family: RussoOne;
+  src: url(./font/RussoOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  background-image: url(./img/cinema.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: RussoOne;
+}
+
+.btn {
+  margin: 5px 10px;
+}
+
+.searchBar {
+  width: 600px;
+}
+.nav {
+  justify-content: center;
+}
+
+.input {
+  justify-content: center;
+  width: 50%;
+  margin: 6px auto;
+}
+
+.baner {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+  width: 20%;
+  
+}
+
+.imgLogo {
+  width: 12%;
+  margin: 20px;
+}
+
+.cardMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 10px;
+  background-color: rgba(125, 143, 176, 0.8);
+  position: relative;
+  border-radius: 15px;
+  border: 2mm ridge rgba(13, 110, 253, 0.6);
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: start;
+  width: 15%;
+  margin: 10px;
+  background-color: rgba(125, 143, 176, 0.8);
+  position: relative;
+  height: 70vh;
+  border-radius: 15px;
+  /* border: 2mm ridge rgba(45, 49, 54, 0.6); */
+  border: 2mm ridge rgba(13, 110, 253, 0.6);
+  z-index: 12;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardPoster {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardOverview {
+  text-overflow: ellipsis;
+  height: 10%;
+}
+
+.cardTitle {
+  margin: 5px 0;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: -1px 0 rgb(13, 110, 253), 0 1px rgb(13, 110, 253),
+    1px 0 rgb(13, 110, 253), 0 -1px rgb(13, 110, 253);
+}
+
+.cardStartYear,
+.cardGenre1,
+.cardAverageRating {
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.cardP {
+  font-weight: 900;
+}
+
+#rev_budg, #top_actress, #subplots_realisateurs, #genre_year {
+  border-radius: 5% 5% 0 0;
+  margin-top: 40px;
+}
+
+#rev, #top_actor, #overview_fr_selec_with_time, #nb_genre {
+  border-radius: 0 0 5% 5%;
+}
+
+#subplots_Duree {
+  border-radius: 5% 5% 5% 5%;
+  margin-top: 40px;
+}
